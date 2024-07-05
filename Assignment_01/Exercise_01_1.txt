@@ -1,0 +1,30 @@
+Ερώτημα 1ο
+
+
+Να γράψετε τους if-then κανόνες του δέντρου αποφάσεων του Σχήματος 1 σε
+ψευδοκώδικα. Αυτοί οι κανόνες αποτελούν μέρος της βάσης γνώσης ενός περιβαλλοντικού
+συστήματος γνώσης το οποίο εντοπίζει προβλήματα σε ποτάμια οικοσυστήματα και
+προτείνει λύσεις γι’ αυτά τα προβλήματα.
+
+1) if (Data = yes , Saturation >= 20) then Result = "No anoxia problem."
+
+2) if (Data = yes , Saturation < 20  , Nitrate = yes) then Result = "Serious anoxia problem."
+
+3) if (Data = yes , Saturation < 20  , Nitrate = no) then Result = "Very serious anoxia problem."
+
+4) if (Data = no , Oligochaetes = many) then Results = "Medium level of anoxia"
+
+5) if (Data = no , Oligochaetes = some) then Results = "Very serious anoxia problem."
+
+6) if (Data = no , Oligochaetes = no , Sediments = light , Substrate_type = normal , Bad_smell = no) then Results = "No anoxia problem."
+
+7) if (Data = no , Oligochaetes = no , Sediments = light , Substrate_type = normal , Bad_smell = yes) then Results = "Medium level of anoxia."
+
+8) if (Data = no , Oligochaetes = no , Sediments = light , Substrate_type = _ ) then Results = "No anoxia problem."
+
+9) if (Data = no , Oligochaetes = no , Sediments = _ , H2s = no , CH4 = no ) then Results = "Serious anoxia problem."
+
+10) if (Data = no , Oligochaetes = no , Sediments = _ , H2s = no , CH4 = yes ) then Results = "Very serious anoxia problem."
+
+11) if (Data = no , Oligochaetes = no , Sediments = _ , H2s = yes ) then Results = "Very serious anoxia problem."
+
